@@ -19,8 +19,11 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^5.4.1",
     "@types/pg": "^8.15.5",
     "drizzle-kit": "^0.31.4",
+    "eslint": "^9.36.0",
+    "eslint-plugin-format": "^1.0.1",
     "tsx": "^4.20.5"
   }
 }
