@@ -47,9 +47,7 @@ async function handleSignIn() {
 </script>
 
 <template>
-  <div>
-    <h1>Auth page</h1>
-
+  <div style="text-align: center;">
     <h2>Sign up</h2>
     <form @submit.prevent="handleSignUp">
       <div>
@@ -69,7 +67,9 @@ async function handleSignIn() {
       </button>
     </form>
 
-    <h2>Sign in</h2>
+    <h2>
+      Sign in
+    </h2>
     <form @submit.prevent="handleSignIn">
       <div>
         <input v-model="signInForm.email" type="email" placeholder="Email" required>

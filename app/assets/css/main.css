@@ -1,0 +1,26 @@
+button {
+  background-color: #dbdbdb;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 6px 20px;
+  color: #343434;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d2d2d2;
+}
+
+button:active {
+  scale: 98%;
+}
+
+input {
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 6px 10px;
+  color: #343434;
+  font-weight: bold;
+}
