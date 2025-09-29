@@ -47,7 +47,7 @@ async function handleSignIn() {
 </script>
 
 <template>
-  <div style="text-align: center;">
+  <div>
     <h2>Sign up</h2>
     <form @submit.prevent="handleSignUp">
       <div>
