@@ -75,7 +75,7 @@ async function handleSignIn() {
 </script>
 
 <template>
-  <div class="mt-[20%] max-w-[300px] mx-auto">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[300px] mx-auto">
     <div class="tabs tabs-lift">
       <input type="radio" name="my_tabs_2" class="tab" aria-label="Login" checked>
       <div class="tab-content border-base-300 bg-base-100 p-10">
