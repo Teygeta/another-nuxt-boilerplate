@@ -1,75 +1,67 @@
-# Nuxt Minimal Starter
+# ⚡ Another Nuxt Boilerplate
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**Yet another** essential and well-configured starter kit for your new Nuxt 4 applications.
 
-## Setup
+This boilerplate is not an immediate production-ready SaaS product, but a solid, modern foundation to start building your web apps.
 
-Make sure to install dependencies:
+## ✨ Key Features
 
-```bash
-# npm
-npm install
+Built on Nuxt 4, this template includes configurations for:
 
-# pnpm
-pnpm install
+| Area | Dependency/Tool | Description |
+| :--- | :--- | :--- |
+| **Backend/DB** | **Drizzle ORM** | A lightweight, TypeScript-first ORM for database management (using `pg` for PostgreSQL). |
+| **Authentication** | **Better-Auth** | A modern authentication solution, pre-configured with Login and Registration pages. |
+| **Styling/UI** | **Tailwind CSS** + **DaisyUI** | Utility-first CSS with a vast library of high-quality UI components for rapid styling. |
+| **Code Quality** | **ESLint** (with `@antfu/eslint-config`) | Strict linting and formatting rules to keep the code clean and consistent. |
 
-# yarn
-yarn install
+## 🚀 Prerequisites
 
-# bun
-bun install
-```
+* Node.js (version 18+)
+* A running **PostgreSQL** database instance (required for Drizzle).
 
-## Development Server
+## 🛠️ Setup
 
-Start the development server on `http://localhost:3000`:
+1.  **Clone the repository:**
+    ```bash
+    npx giget@latest gh:teygeta/another-nuxt-boilerplate
+    cd another-nuxt-boilerplate
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Configure the environment:**
+    Create a **`.env`** file based on a potential `.env.example` and set up your PostgreSQL database connection string (e.g., `DATABASE_URL=...`).
+4.  **Prepare the database:**
+    Run the initial migrations (by first generating the schema and then applying it):
+    ```bash
+    npm run db:generate
+    npm run db:push
+    ```
 
-```bash
-# npm
-npm run dev
+## 🖥️ Available Scripts
 
-# pnpm
-pnpm dev
+| Script | Description |
+| :--- | :--- |
+| `npm run dev` | Starts the application in development mode with hot reload. |
+| `npm run build` | Compiles the application for production. |
+| `npm run preview` | Executes the compiled production server locally. |
+| `npm run lint` | Runs code linting. |
+| `npm run lint:fix` | Runs linting and attempts to automatically fix errors. |
+| `npm run db:generate` | Generates Drizzle migrations based on your DB schema. |
+| `npm run db:push` | Applies Drizzle schema changes to the database. |
 
-# yarn
-yarn dev
+## 🧩 UI Structure
 
-# bun
-bun run dev
-```
+The template only includes the basic structure to get started:
 
-## Production
+* An example **Navbar** with main links.
+* Functional **Login** and **Registration** pages, managed by `better-auth`.
+* Essential layout to demonstrate Tailwind/DaisyUI integration.
 
-Build the application for production:
+---
 
-```bash
-# npm
-npm run build
+### Contributions
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Feel free to fork, use, and contribute to this project!
